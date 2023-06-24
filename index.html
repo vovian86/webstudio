@@ -5,109 +5,141 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
     <title>WebStudio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
 
-    <header>
-
-        <a href="">WebStudio</a>
-        <nav>
-            <ul>
-                <li>Studio</li>
-                <li>Portfolio</li>
-                <li>Contacts</li>
-            </ul>
-            <ul>
-                <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a href="tel:+12127724150">+1 212-772-4150</a></li>
+    <header class="header">
+        <div class="container">
+            <a href="./index.html" class="header-logo link">Web<span>Studio</span></a>
+        <nav class="header-nav">
+            <ul class="header-list list">
+                <li class="header-item"><a href="./index.html" class="header-link link">Studio</a></li>
+                <li class="header-item"><a href="./portfolio.html" class="header-link link">Portfolio</a></li>
+                <li class="header-item"><a href="" class="header-link link">Contacts</a></li>
             </ul>
         </nav>
-
+        <div class="header-connect">
+                <a href="mailto:info@devstudio.com" class="header-mail link header-contacts">info@devstudio.com</a>
+            <a href="tel:+12127724150" class="header-tel link header-contacts">+1 212-772-4150</a>
+            </div>
+            </div>
     </header>
 
     <main>
-        <section>
-            <h1>Effective solutions for your business</h1>
-            <button type="button">Request our service</button>
+        <section class="hero">
+            <div class="container">
+            <h1 class="hero-title">Effective solutions for your business</h1>
+            <button type="button" class="hero-btn btn">Request our service</button>
+        </div>
         </section>
 
-        <section>
-            <h2>Our advantages</h2>
-            <ul>
-                <li>
-                    <h3>Attention to details</h3>
-                    <p>We go into all the details and processes of your business to develop a customized solution.</p>
+        <section class="benefits section">
+            <div class="container">
+                <h2 class="benefits-title title visually-hidden">Our benefits</h2>
+            <ul class="benefits-list list">
+                <li class="benefits-item">
+                    <h3 class="benefits-title title">Attention to details</h3>
+                    <p class="benefits-text text">We go into all the details and processes of your business to develop a
+                        customized
+                        solution.</p>
                 </li>
-                <li>
-                    <h3>Punctuality</h3>
-                    <p>With us, you can feel safe and secure. An important principle of the company: respect your time
+                <li class="benefits-item">
+                    <h3 class="benefits-title title">Punctuality</h3>
+                    <p class="benefits-text text">With us, you can feel safe and secure. An important principle of the company: respect
+                        your
+                        time
                         and respect the agreed deadlines.</p>
                 </li>
-                <li>
-                    <h3>Planning</h3>
-                    <p>You will be able to observe and participate in every phase of solution development and
+                <li class="benefits-item">
+                    <h3 class="benefits-title title">Planning</h3>
+                    <p class="benefits-text text">You will be able to observe and participate in every phase of solution development and
                         implementation.</p>
                 </li>
-                <li>
-                    <h3>Modern technologies</h3>
-                    <p>We use innovative tools to solve assigned tasks. It's time to simplify work processes.</p>
+                <li class="benefits-item">
+                    <h3 class="benefits-title title">Modern technologies</h3>
+                    <p class="benefits-text text">We use innovative tools to solve assigned tasks. It's time to simplify work processes.
+                    </p>
                 </li>
             </ul>
+            </div>
         </section>
 
-        <section>
-            <h2>What we do</h2>
+        <section class="work">
+            <div class="container">
+                <h2 class="work-title title">What we do</h2>
 
-            <ul>
-                <li><img src="./images/example1.jpg" alt="Coding" width="370"></li>
-                <li><img src="./images/example2.jpg" alt="Design" width="370"></li>
-                <li><img src="./images/example3.jpg" alt="Mobile version" width="370"></li>
+            <ul class="work-list list">
+                <li class="work-item"><img class="work-link" src="./images/example1.jpg" alt="Coding" width="370"></li>
+                <li class="work-item"><img class="work-link" src="./images/example2.jpg" alt="Design" width="370"></li>
+                <li class="work-item"><img class="work-link" src="./images/example3.jpg" alt="Mobile version" width="370"></li>
             </ul>
+            </div>
         </section>
 
-        <section>
-            <h2>Our Team</h2>
+        <section class="team">
+            <div class="container">
+                <h2 class="team-title title">Our Team</h2>
 
-            <ul>
-                <li>
+            <ul class="team-list list">
+                <li class="team-item">
                     <img src="./images/product-designer.jpg" alt="Product Designer" width="270">
-                    <h3>Christopher Walker</h3>
-                    <p>Product Designer</p>
+                    <div class="team-member">
+                        <h3 class="team-list-title title">Christopher Walker</h3>
+                    <p class="team-text text">Product Designer</p>
+                    </div>
                 </li>
-                <li>
+                <li class="team-item">
                     <img src="./images/frontend-developer.jpg" alt="Frontend Developer" width="270">
-                    <h3>Kylie Evans</h3>
-                    <p>Frontend Developer</p>
+                    <div class="team-member">
+                        <h3 class="team-list-title title">Kylie Evans</h3>
+                    <p class="team-text text">Frontend Developer</p>
+                    </div>
                 </li>
-                <li>
+                <li class="team-item">
                     <img src="./images/marketing.jpg" alt="Marketing" width="270">
-                    <h3>Ryan Harris</h3>
-                    <p>Marketing</p>
+                    <div class="team-member">
+                        <h3 class="team-list-title title">Ryan Harris</h3>
+                    <p class="team-text text">Marketing</p>
+                    </div>
                 </li>
-                <li>
+                <li class="team-item">
                     <img src="./images/ui-designer.jpg" alt="UI Designer" width="270">
-                    <h3>Tyler Moore</h3>
-                    <p>UI Designer</p>
+                    <div class="team-member">
+                        <h3 class="team-list-title title">Tyler Moore</h3>
+                    <p class="team-text text">UI Designer</p>
+                    </div>
                 </li>
             </ul>
+            </div>
         </section>
 
     </main>
 
-    <footer>
-        <a href="">WebStudio</a>
+    <footer class="footer">
+        <div class="container">
+            <a href="./index.html" class="footer-logo link">Web<span>Studio</span></a>
 
-        <address>
-            <ul>
-                <li>
-                    <p>695 Park Ave, New York, NY 10065,<br> United States</p>
+        <address class="footer-address">
+            <ul class="footer-list list">
+                <li class="footer-item"><a href="https://goo.gl/maps/vbvBNtVyRsB4Z6VEA?coh=178573&entry=tt" target="_blank"
+                        rel="noopener nofollow noreferrer" class="footer-link link">695 Park Ave, NY 10065, USA
                 </li>
-                <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a href="tel:+12127724150">+1 212-772-4150</a></li>
+                <li class="footer-item"><a href="mailto:info@devstudio.com"
+                        class="footer-link link footer-contacts">info@devstudio.com</a></li>
+                <li class="footer-item"><a href="tel:+12127724150" class="footer-link link footer-contacts">+1 212-772-4150</a></li>
             </ul>
         </address>
+        </div>
     </footer>
 
 </body>
