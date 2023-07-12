@@ -4,6 +4,7 @@
     --main-btn-color: #212121;
     --main-logo-color: #2196F3;
     --main-bg-color: #2F303A;
+    --second-bg-color: #C4C4C4;
     --second-title-color: #FFFFFF;
     --second-btn-color: #FFFFFF;
     --accent-color: #2196F3;
@@ -147,11 +148,19 @@ img {
 /* ----------HERO---------- */
 
 .hero {
-    background-color: var(--main-bg-color);
+    background-color: var(--second-bg-color);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../images/hero-bg.jpg);
+        height: 600px;
+        max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 280px;
-}
-
+    margin-left: auto;
+        margin-right: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    
+    
 .hero-title {
     margin-bottom: 30px;
     margin-left: auto;
