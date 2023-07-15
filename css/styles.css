@@ -8,6 +8,7 @@
     --second-title-color: #FFFFFF;
     --second-btn-color: #FFFFFF;
     --accent-color: #2196F3;
+    --main-soc-color: #AFB1B8;
     --main-gap: 30px;
         --main-filter-gap: 8px;
 }
@@ -42,7 +43,7 @@ img {
     padding-right: 15px;
 }
 
-.section {
+section {
     margin: 0;
     padding-top: 94px;
     padding-bottom: 94px;
@@ -131,16 +132,38 @@ img {
 
 .header-connect {
     margin-left: auto;
+    display: flex;
+        align-items: center;
 }
 
+/* Універсальний спосіб, не тільки для кольору і для іконок, але й для розміру, анімації, бекграунду...
+    
+    .masters-soc-link:hover .masters-soc-icon,
+    .masters-soc-link:focus .masters-soc-icon {
+        fill: chocolate;
+    }
+    
+    .masters-soc-link:hover,
+    .masters-soc-link:focus {
+        background-color: teal;
+}
+
+*/
 .header-contacts {
-    font-weight: 500;
+        font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
+    display: flex;
+        align-items: center;
 }
 
+.header-connect-mail,
+.header-connect-phone {
+    fill: currentColor;
+    margin-right: 10px;
+}
 .header-contacts:not(:last-child) {
     margin-right: 40px;
 }
@@ -149,16 +172,17 @@ img {
 
 .hero {
     background-color: var(--second-bg-color);
-        background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../images/hero-bg.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../images/hero-bg.jpg);
         height: 600px;
         max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 280px;
     margin-left: auto;
-        margin-right: auto;
+    margin-right: auto;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+}
     
     
 .hero-title {
@@ -194,6 +218,9 @@ img {
 
 /* ----------BENEFITS---------- */
 
+.benefits {
+    padding-bottom: 0;
+}
 .benefits-list {
     padding: 0;
         margin: 0;
@@ -210,19 +237,22 @@ img {
         margin-top: var(--main-gap);
 }
 
-.benefits-item {
+/* .benefits-item {
     box-sizing: var(--main-gap);
-    }
-    
-    /* .benefits-item {
+    */ .benefits-item {
         max-width: 270px;
     }
-    
-    .benefits-item+.benefits-item {
+/* .benefits-item+.benefits-item {
         margin-left: 30px;
 }
 
 */
+.benefits-image {
+    background-color: #F5F4FA;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
 .benefits-title {
     margin-bottom: 10px;
     font-size: 14px;
@@ -239,9 +269,7 @@ img {
 
 /* ----------WORK---------- */
 
-.work {
-    padding-bottom: 94px;
-}
+/*      */
 
 .work-title {
     font-size: 36px;
@@ -276,9 +304,6 @@ img {
 
 .team {
     background-color: #F5F4FA;
-
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 .team-title {
@@ -308,7 +333,7 @@ img {
 .team-member {
     background-color: var(--second-title-color);
     width: 270px;
-        height: 108px;
+        height: 168px;
         padding-top: 30px;
         padding-bottom: 30px;
         border-radius: 0px 0px 4px 4px;
@@ -329,6 +354,90 @@ img {
     letter-spacing: 0.03em;
 }
 
+.team-soc-item {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+}
+
+.team-soc-item:last-child {
+    margin-right: 0;
+}
+
+.team-soc-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-soc-color);
+    margin-top: 16px;
+}
+
+.team-soc-list {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.team-soc-icon {
+    fill: currentColor;
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+    background-color: var(--accent-color);
+    color: var(--second-btn-color);
+}
+
+/* ----------CUSTOMERS---------- */
+
+.customers-title {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--main-title-color);
+}
+
+.customers-item {
+    width: 170px;
+    height: 92;
+    margin-right: var(--main-gap);
+}
+
+.customers-item:last-child {
+    margin-right: 0;
+}
+
+.customers-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #AFB1B8;
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+    padding: 16px 32px;
+}
+
+.customers-list {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.customers-icon {
+    fill: currentColor;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
 
 /* ----------FOOTER---------- */
 
@@ -420,11 +529,6 @@ img {
 
 
 /* ----------PROJECTS---------- */
-
-.projects {
-    margin-top: 94px;
-    margin-bottom: 94px;
-}
 
 .projects-list {
     padding: 0;
