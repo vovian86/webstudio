@@ -23,7 +23,7 @@
             <a href="./index.html" class="header-logo link">Web<span>Studio</span></a>
         <nav class="header-nav">
             <ul class="header-list list">
-                <li class="header-item"><a href="./index.html" class="header-link link">Studio</a></li>
+                <li class="header-item"><a href="./index.html" class="header-link link current">Studio</a></li>
                 <li class="header-item"><a href="./portfolio.html" class="header-link link">Portfolio</a></li>
                 <li class="header-item"><a href="" class="header-link link">Contacts</a></li>
             </ul>
@@ -47,7 +47,7 @@
         <section class="hero">
             <div class="container">
             <h1 class="hero-title">Effective solutions for your business</h1>
-            <button type="button" class="hero-btn btn">Request our service</button>
+            <button type="button" class="hero-btn btn" data-modal-open>Request our service</button>
         </div>
         </section>
 
@@ -96,9 +96,24 @@
                 <h2 class="work-title title">What we do</h2>
 
             <ul class="work-list list">
-                <li class="work-item"><img class="work-link" src="./images/example1.jpg" alt="Coding" width="370"></li>
-                <li class="work-item"><img class="work-link" src="./images/example2.jpg" alt="Design" width="370"></li>
-                <li class="work-item"><img class="work-link" src="./images/example3.jpg" alt="Mobile version" width="370"></li>
+                <li class="work-item">
+                    <div class="work-top-wrap">
+                        <img class="work-link" src="./images/example1.jpg" alt="Coding" width="370">
+                        <p class="work-top-text">Desktop apps</p>
+                    </div>
+                </li>
+                <li class="work-item">
+                    <div class="work-top-wrap">
+                        <img class="work-link" src="./images/example2.jpg" alt="Design" width="370">
+                        <p class="work-top-text">Mobile apps</p>
+                    </div>
+                </li>
+                <li class="work-item">
+                    <div class="work-top-wrap">
+                        <img class="work-link" src="./images/example3.jpg" alt="Mobile version" width="370">
+                        <p class="work-top-text">Design solutions</p>
+                    </div>
+                </li>
             </ul>
             </div>
         </section>
@@ -352,6 +367,16 @@
         </div>
         </div>
     </footer>
+
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close><svg width="20" height="20">
+                <use href="./images/icons.svg#icon-close-modal"></use>
+            </svg></button>
+    </div>
+</div>
+
+<script src="./js/modal.js"></script>
 
 </body>
 
