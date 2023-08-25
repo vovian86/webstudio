@@ -833,12 +833,6 @@ section {
     fill: var(--accent-color);
 }
 
-.is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-}
-
 .no-scroll {
     overflow: hidden;
 }
@@ -974,4 +968,10 @@ border-color: var(--accent-color);
     border-radius: 4px;
         background: #188CE8;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
 }
